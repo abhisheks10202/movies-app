@@ -147,7 +147,7 @@ console.log(this.state.currgen)
                   <div className='row'>
                      <div class="input-group input-group-sm mb-3">
                         <input type="text" class="input -group-text col"   placeholder='Search' value={this.state.currText} onChange={(e)=>this.setState({currText:e.target.value})} />
-                        <input type="number" class="input -group-text col" placeholder='Count Rows' value={this.state.limit} onChange={(e)=>this.setState({limit:e.target.value})}  />
+                        <input type="number" class="input -group-text col" placeholder='Count Rows' value={this.state.limit} onChange={(e)=>this.setState({limit:e.target.value!=""?e.target.value:10})}  />
                      </div>
                   </div>
                   <div  className='row'>
